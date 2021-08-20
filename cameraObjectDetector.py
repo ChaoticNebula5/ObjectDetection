@@ -6,7 +6,7 @@ frozen_model = "frozen_inference_graph.pb"
 model = cv2.dnn_DetectionModel(frozen_model, config_file)
 
 classLabels = []
-file_name = "/Users/manishsrivastava/Desktop/ProgrammingAndCoding/Python/ObjectDetection/Labels.txt"
+file_name = "Labels.txt"
 with open(file_name, 'rt') as fpt:
     classLabels = fpt.read().rstrip('\n').split('\n')
 
